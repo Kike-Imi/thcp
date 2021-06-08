@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using tchp.Models;
 
 namespace tchp.Data
 {
@@ -12,5 +13,8 @@ namespace tchp.Data
             : base(options)
         {
         }
+
+        public DbSet<Department> Departments { get; set; }
+
     }
 }
